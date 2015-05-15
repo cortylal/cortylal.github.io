@@ -14,7 +14,7 @@
 
 	body
 	{
-		background-image:			url('images/overlay.png'),		url('images/blurred_lines.jpeg');
+		background-image:			url('images/overlay.png'),		url('images/star_sky.jpg');
 		background-repeat:			repeat,							no-repeat;
 		background-size:			auto,							100% 100%;
 	}
