@@ -3,7 +3,7 @@ Welcome to my personal website project, created and maintained to promote my wor
 
 Credits:
 
-	Demo Images:
+	Background Image:
 		Unsplash (unsplash.com)
 		
 	Icons:
