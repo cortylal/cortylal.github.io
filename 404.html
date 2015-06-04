@@ -31,7 +31,15 @@
 
 		  ga('create', 'UA-63647463-1', 'auto');
 		  ga('send', 'pageview');
-
+		  
+		  old = document.location.href;
+		  setInterval(function(){
+		  	url = document.location.href
+		  	if(old!==url){
+		  		old = url;
+		  		ga("send","pageview",document.location.href);
+		  	}
+		  }, 100);
 		</script>
 	</head>
 	<body>
