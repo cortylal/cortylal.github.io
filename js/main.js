@@ -62,10 +62,10 @@ $(document).ready(function(){
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 50) {
-            $(".navbar-brand a").css("color","#02BDD5");
+            $(".navbar-brand a").css("color","#7092c7");
             $("#top-bar").removeClass("animated-header");
         } else {
-            $(".navbar-brand a").css("color","#02BDD5");
+            $(".navbar-brand a").css("color","#7092c7");
             $("#top-bar").addClass("animated-header");
         }
     });
