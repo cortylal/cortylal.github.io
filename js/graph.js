@@ -333,7 +333,7 @@
 		}
 
 		var theUI = {
-			nodes:{"Skills":{color:"#02BDD5", shape:"dot", alpha:1}, 
+			nodes:{"Skills":{color:"#7092c7", shape:"dot", alpha:1}, 
 			
 			Web:{color:CLR.black, shape:"dot", alpha:1}, 
 			HTML:{color:CLR.blue, alpha:0},
