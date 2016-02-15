@@ -427,7 +427,7 @@
 				Oracle:{},
 				Hadoop:{},
 				Hive:{},
-				Hive:{}
+				MySQL:{}
 			},
 			"Machine Learning":{
 				SVM:{},
