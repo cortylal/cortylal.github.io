@@ -364,6 +364,7 @@
 			Oracle:{color:CLR.orange, alpha:0},
 			Hadoop:{color:CLR.orange, alpha:0},
 			Hive:{color:CLR.orange, alpha:0},
+			MySQL:{color:CLR.orange, alpha:0},
 
 			"Machine Learning":{color:CLR.black, shape:"dot", alpha:1},
 			SVM:{color:CLR.green, alpha:0},
@@ -425,6 +426,7 @@
 			"Data Storage":{
 				Oracle:{},
 				Hadoop:{},
+				Hive:{},
 				Hive:{}
 			},
 			"Machine Learning":{
