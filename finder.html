@@ -34,6 +34,7 @@
         <link rel="stylesheet" href="css/purple.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="css/responsive.css">
+        <!-- finder css -->
         <link rel="stylesheet" type="text/css" href="css/finder.css">
         
         <!-- Template Javascript Files
@@ -55,261 +56,263 @@
         <script src="js/main.js"></script>
     </head>
     <body>
-        <!--
-        ==================================================
-        Header Section Start
-        ================================================== -->
-        <header id="top-bar" class="navbar-fixed-top animated-header">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <!-- /responsive nav button -->
-                    <!-- logo -->
-                    <div class="navbar-brand">
-                        <a href="http://www.alexandrecortyl.com">
-                            Alexandre CORTYL
-                        </a>
+                <!--
+                ==================================================
+                Header Section Start
+                ================================================== -->
+                <header id="top-bar" class="navbar-fixed-top animated-header">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <!-- responsive nav button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <!-- /responsive nav button -->
+                            <!-- logo -->
+                            <div class="navbar-brand">
+                                <a href="http://www.alexandrecortyl.com">
+                                    Alexandre CORTYL
+                                </a>
+                            </div>
+                            <!-- /logo -->
+                        </div>
+
+                        <!-- main menu -->
+                        <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                            <div class="main-menu">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a href="http://www.alexandrecortyl.com" >Home</a>
+                                    </li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="resume.html">Resume</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a href="finder.html">Intern Finder</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- /main nav -->
                     </div>
-                    <!-- /logo -->
-                </div>
+                </header>
+                
+                <!--
+                ==================================================
+                Page Start
+                ================================================== -->
 
-                <!-- main menu -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <div class="main-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="http://www.alexandrecortyl.com" >Home</a>
-                            </li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="resume.html">Resume</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li><a href="finder.html">Intern Finder</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                <section id="Indications">
+                    <div class="container" style="padding-top: 140px;">
+                        <div class="center" style="text-align: center">
+                            <h1 style="border-bottom: #7092c7 6px solid; border-bottom-width: 6px; border-bottom-style: solid; display: inline-block; margin-bottom: 0px; padding-bottom: 10px">Welcome to the "Intern Finder"!</h1>
+                        </div>
+                        <div>
+                            <h3 style="text-align: center; padding-top: 20px;">
+                                This tool will help you find the intern you've been looking for.
+                            </h3>
+                            <h4 style="text-align: center;"> 
+                            Simply select the <b>relevant</b> criteria you look for in a candidate, and see the <b>adequate profiles</b> emerge. 
+                                <br>
+                            You'll then easily identify personalities that are <b>tailored</b> to your needs.
+                                <br><br>
+                            </h4>
+                            <h3 style="text-decoration: underline;">
+                            I'm looking for a candidate that:
+                            </h3>
+                        </div>
                     </div>
-                </nav>
-                <!-- /main nav -->
-            </div>
-        </header>
-        
-        <!--
-        ==================================================
-        Page Start
-        ================================================== -->
+                </section>  
 
-        <section id="Indications">
-            <div class="container" style="padding-top: 140px;">
-                <div class="center" style="text-align: center">
-                    <h1 style="border-bottom: #7092c7 6px solid; border-bottom-width: 6px; border-bottom-style: solid; display: inline-block; margin-bottom: 0px; padding-bottom: 10px">Welcome to the "Intern Finder"!</h1>
-                </div>
-                <div>
-                    <h3 style="text-align: center; padding-top: 20px;">
-                        This tool will help you find the intern you've been looking for.
-                    </h3>
-                    <h4 style="text-align: center;"> 
-                    Simply select the <b>relevant</b> criteria you look for in a candidate, and see the <b>adequate profiles</b> emerge. 
-                        <br>
-                    You'll then easily identify personalities that are <b>tailored</b> to your needs.
-                        <br><br>
-                    </h4>
-                    <h3 style="text-decoration: underline;">
-                    I'm looking for a candidate that:
-                    </h3>
-                </div>
-            </div>
-        </section>  
+                <a id="bring-popup" class="popup-trigger" style="display: none;">Open Pop Up</a>     
 
-        <a id="bring-popup" class="popup-trigger" style="display: none;">Open Pop Up</a>     
-
-        <section class="moduler" style="padding: 10px 0;">
-            <div id="form-ui" class="container">
-                <!-- On mobile, line-height : 3.6; -->
-                <div class="row">
-                  <div class="col-md-6">
-                        <label class="switch switch-xs switch-warning">
-                            <input type="checkbox" class="btn" value=".math">
-                            <span class="switch"></span>
-                            <span class="mlm">Has a strong background in mathematics and statistics</span>
-                        </label>
+                <section class="moduler" style="padding: 10px 0;">
+                    <div id="form-ui" class="container">
+                        <!-- On mobile, line-height : 3.6; -->
+                        <div class="row">
+                          <div class="col-md-6">
+                                <label class="switch switch-xs switch-warning">
+                                    <input type="checkbox" class="btn" value=".math">
+                                    <span class="switch"></span>
+                                    <span class="mlm">Has a strong background in mathematics and statistics</span>
+                                </label>
+                            </div>
+                          <div class="col-md-6">
+                                <label class="switch switch-xs switch-warning">
+                                        <input type="checkbox" class="btn" value=".english">
+                                        <span class="switch"></span>
+                                        <span class="mlm">Is fluent in English</span>
+                                </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                                <label class="switch switch-xs switch-warning">
+                                        <input type="checkbox" class="btn" value=".fascinated">
+                                        <span class="switch"></span>
+                                        <span class="mlm">Is fascinated by Data Analysis and Machine Learning</span>
+                                </label>
+                            </div>
+                          <div class="col-md-6">
+                                <label class="switch switch-xs switch-warning">
+                                        <input type="checkbox" class="btn" value=".manager">
+                                        <span class="switch"></span>
+                                        <span class="mlm">Is a team leader, not a boss</span>
+                                </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                                <label class="switch switch-xs switch-warning">
+                                        <input type="checkbox" class="btn" value=".experience">
+                                        <span class="switch"></span>
+                                        <span class="mlm">Already has a professional experience in Data Science</span>
+                                </label>
+                            </div>
+                          <div class="col-md-6">
+                                <label class="switch switch-xs switch-warning">
+                                        <input type="checkbox" class="btn" value=".beer">
+                                        <span class="switch"></span>
+                                        <span class="mlm">Is always willing to have a beer</span>
+                                </label>
+                          </div>
+                        </div>
                     </div>
-                  <div class="col-md-6">
-                        <label class="switch switch-xs switch-warning">
-                                <input type="checkbox" class="btn" value=".english">
-                                <span class="switch"></span>
-                                <span class="mlm">Is fluent in English</span>
-                        </label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                        <label class="switch switch-xs switch-warning">
-                                <input type="checkbox" class="btn" value=".fascinated">
-                                <span class="switch"></span>
-                                <span class="mlm">Is fascinated by Data Analysis and Machine Learning</span>
-                        </label>
+
+                    <div id="container" style="margin: 20px;"> 
+                        <!-- Me -->
+                        <img class="item fascinated math experience english manager beer" src="./images/finder/Male/Alexandre_Cortyl_0001.jpg" alt="Me" >
+                        <!-- 21 Males -->
+                        <img class="item fascinated math english manager beer" src="./images/finder/Male/Aaron_Eckhart_0001.jpg" alt="Male1">
+                        <img class="item fascinated math english manager beer" src="./images/finder/Male/Adrien_Brody_0001.jpg" alt="Male2">
+                        <img class="item fascinated math experience manager beer" src="./images/finder/Male/Andrew_Bernard_0001.jpg" alt="Male3">
+                        <img class="item fascinated math experience manager beer" src="./images/finder/Male/Anthony_Carter_0001.jpg" alt="Male4">
+                        <img class="item fascinated math experience manager beer" src="./images/finder/Male/Antonio_Banderas_0003.jpg" alt="Male5">
+                        <img class="item fascinated math experience english beer" src="./images/finder/Male/Aron_Ralston_0001.jpg" alt="Male6">
+                        <img class="item fascinated math experience english manager" src="./images/finder/Male/Ben_Affleck_0004.jpg" alt="Male7">
+                        <img class="item fascinated math experience english beer" src="./images/finder/Male/Bill_Gates_0011.jpg" alt="Male8">
+                        <img class="item fascinated math experience english beer" src="./images/finder/Male/Billy_Crawford_0001.jpg" alt="Male9">
+                        <img class="item fascinated math experience english beer" src="./images/finder/Male/Bob_Hayes_0001.jpg" alt="Male10">
+                        <img class="item fascinated math experience english beer" src="./images/finder/Male/Bobby_Kielty_0001.jpg" alt="Male11">
+                        <img class="item fascinated experience english manager beer" src="./images/finder/Male/Brad_Brownell_0001.jpg" alt="Male12">
+                        <img class="item fascinated experience english manager beer" src="./images/finder/Male/Brian_Campbell_0001.jpg" alt="Male13">
+                        <img class="item fascinated experience english manager beer" src="./images/finder/Male/Calbert_Cheaney_0001.jpg" alt="Male14">
+                        <img class="item fascinated math experience english manager" src="./images/finder/Male/Carlos_Manuel_Pruneda_0001.jpg" alt="Male15">
+                        <img class="item fascinated math experience english manager" src="./images/finder/Male/Carlos_Moya_0001.jpg" alt="Male16">
+                        <img class="item fascinated math experience english manager" src="./images/finder/Male/Chris_Moore_0001.jpg" alt="Male17">
+                        <img class="item fascinated math experience english manager" src="./images/finder/Male/Christopher_Matero_0001.jpg" alt="Male18">
+                        <img class="item math experience english manager beer" src="./images/finder/Male/Chuanyun_Li_0001.jpg" alt="Male19">
+                        <img class="item math experience english manager beer" src="./images/finder/Male/Clay_Aiken_0005.jpg" alt="Male20">
+                        <img class="item math experience english manager beer" src="./images/finder/Male/Craig_Morgan_0001.jpg" alt="Male21">
+                        <!-- <img class="item" src="./images/finder/Male/.jpg" alt="Male"> -->
+                        <!-- 22 Females -->
+                        <img class="item fascinated math english manager beer" src="./images/finder/Female/Adriana_Lima_0001.jpg" alt="Female1">
+                        <img class="item fascinated math english manager beer" src="./images/finder/Female/Afton_Smith_0001.jpg" alt="Female2">
+                        <img class="item fascinated math experience manager beer" src="./images/finder/Female/Agnes_Bruckner_0001.jpg" alt="Female3">
+                        <img class="item fascinated math experience manager beer" src="./images/finder/Female/Ai_Sugiyama_0001.jpg" alt="Female4">
+                        <img class="item fascinated math experience manager beer" src="./images/finder/Female/Aishwarya_Rai_0001.jpg" alt="Female5">
+                        <img class="item fascinated math experience english beer" src="./images/finder/Female/Alexandra_Rozovskaya_0001.jpg" alt="Female6">
+                        <img class="item fascinated math experience english manager" src="./images/finder/Female/Alicia_Witt_0001.jpg" alt="Female7">
+                        <img class="item fascinated math experience english manager" src="./images/finder/Female/Angela_Bassett_0005.jpg" alt="Female8">
+                        <img class="item fascinated math experience english beer" src="./images/finder/Female/Angelina_Jolie_0017.jpg" alt="Female9">
+                        <img class="item fascinated math experience english beer" src="./images/finder/Female/Bridget_Fonda_0003.jpg" alt="Female10">
+                        <img class="item fascinated math experience english beer" src="./images/finder/Female/Britney_Spears_0004.jpg" alt="Female11">
+                        <img class="item fascinated experience english manager beer" src="./images/finder/Female/Brittany_Snow_0001.jpg" alt="Female12">
+                        <img class="item fascinated experience english manager beer" src="./images/finder/Female/Carla_Gay_Balingit_0001.jpg" alt="Female13">
+                        <img class="item fascinated experience english manager beer" src="./images/finder/Female/Carmen_Electra_0004.jpg" alt="Female14">
+                        <img class="item fascinated experience english manager beer" src="./images/finder/Female/Catherine_Zeta-Jones_0003.jpg" alt="Female15">
+                        <img class="item fascinated math experience english manager" src="./images/finder/Female/Christine_Baumgartner_0001.jpg" alt="Female16">
+                        <img class="item fascinated math experience english manager" src="./images/finder/Female/Christy_Turlington_0001.jpg" alt="Female17">
+                        <img class="item fascinated math experience english manager" src="./images/finder/Female/Cindy_Crawford_0002.jpg" alt="Female18">
+                        <img class="item math experience english manager beer" src="./images/finder/Female/Claudia_Schiffer_0002.jpg" alt="Female19">
+                        <img class="item math experience english manager beer" src="./images/finder/Female/Claudine_Farrell_0001.jpg" alt="Female20">
+                        <img class="item math experience english manager beer" src="./images/finder/Female/Courtney_Cox_0001.jpg" alt="Female21">
+                        <img class="item math experience english manager beer" src="./images/finder/Female/Cyndi_Thompson_0002.jpg" alt="Female22">
+                        <!-- <img class="item" src="./images/finder/Female/.jpg" alt="Female"> -->
+
                     </div>
-                  <div class="col-md-6">
-                        <label class="switch switch-xs switch-warning">
-                                <input type="checkbox" class="btn" value=".manager">
-                                <span class="switch"></span>
-                                <span class="mlm">Is a team leader, not a boss</span>
-                        </label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                        <label class="switch switch-xs switch-warning">
-                                <input type="checkbox" class="btn" value=".experience">
-                                <span class="switch"></span>
-                                <span class="mlm">Already has a professional experience in Data Science</span>
-                        </label>
+                </section>
+
+                <section id="About project">
+                    <div class="container">
+                        <div class="center" style="text-align: center">
+                            <h1 style="border-bottom: #7092c7 6px solid; border-bottom-width: 6px; border-bottom-style: solid; display: inline-block; margin-bottom: 0px; padding-bottom: 10px">About the project</h1>
+                        </div>
+                        <div>
+                            <h2> Why? </h2>
+                            <h4> 
+                            As I'm currently looking for an end-of-studies internship, my main goal was to produce a fun and interactive way for people to get to know my profile!
+                                <br><br>
+                            I also wanted to give you a chance to feel the satisfaction I get when I'm analyzing data, by vulgarizing and pictorially representing the task of a Data Scientist. 
+                                <br>                    
+                            Nothing is more rewarding than finding what you're looking for among a large amount of diverse, raw and untidy data. 
+                                <br>
+                            By getting to better understand the data you're working on, you are able to draw conclusions and you can help take decisions.
+                            </h4>
+                            <h2 style="padding-top: 30px"> How? </h2>
+                            <h4> I took copyright-free photos of public figures (mainly actors, athletes, models and politics) from an open source database of face photographs: <a href="http://vis-www.cs.umass.edu/lfw/" style="color: #7092c7;" target="_blank"> Labeled Faces in the Wild: A Database for Studying Face Recognition in Unconstrained Environments</a>.
+                                <br>
+                            This database from the University of Massachusetts is usually used to evaluate face recognition algorithms.
+                                
+                                <br><br>
+                            The pictures were chosen randomly, with the only criteria being that the faces were visible.
+                                <br>
+                            The display relies on Javascript, jQuery and the Isotope library in particular.
+                            </h4>
+                        </div>
                     </div>
-                  <div class="col-md-6">
-                        <label class="switch switch-xs switch-warning">
-                                <input type="checkbox" class="btn" value=".beer">
-                                <span class="switch"></span>
-                                <span class="mlm">Is always willing to have a beer</span>
-                        </label>
-                  </div>
-                </div>
-            </div>
+                </section>
 
-            <div id="container" style="margin: 20px;"> 
-                <!-- Me -->
-                <img class="item fascinated math experience english manager beer" src="./images/finder/Male/Alexandre_Cortyl_0001.jpg" alt="Me" >
-                <!-- 21 Males -->
-                <img class="item fascinated math english manager beer" src="./images/finder/Male/Aaron_Eckhart_0001.jpg" alt="Male1">
-                <img class="item fascinated math english manager beer" src="./images/finder/Male/Adrien_Brody_0001.jpg" alt="Male2">
-                <img class="item fascinated math experience manager beer" src="./images/finder/Male/Andrew_Bernard_0001.jpg" alt="Male3">
-                <img class="item fascinated math experience manager beer" src="./images/finder/Male/Anthony_Carter_0001.jpg" alt="Male4">
-                <img class="item fascinated math experience manager beer" src="./images/finder/Male/Antonio_Banderas_0003.jpg" alt="Male5">
-                <img class="item fascinated math experience english beer" src="./images/finder/Male/Aron_Ralston_0001.jpg" alt="Male6">
-                <img class="item fascinated math experience english manager" src="./images/finder/Male/Ben_Affleck_0004.jpg" alt="Male7">
-                <img class="item fascinated math experience english beer" src="./images/finder/Male/Bill_Gates_0011.jpg" alt="Male8">
-                <img class="item fascinated math experience english beer" src="./images/finder/Male/Billy_Crawford_0001.jpg" alt="Male9">
-                <img class="item fascinated math experience english beer" src="./images/finder/Male/Bob_Hayes_0001.jpg" alt="Male10">
-                <img class="item fascinated math experience english beer" src="./images/finder/Male/Bobby_Kielty_0001.jpg" alt="Male11">
-                <img class="item fascinated experience english manager beer" src="./images/finder/Male/Brad_Brownell_0001.jpg" alt="Male12">
-                <img class="item fascinated experience english manager beer" src="./images/finder/Male/Brian_Campbell_0001.jpg" alt="Male13">
-                <img class="item fascinated experience english manager beer" src="./images/finder/Male/Calbert_Cheaney_0001.jpg" alt="Male14">
-                <img class="item fascinated math experience english manager" src="./images/finder/Male/Carlos_Manuel_Pruneda_0001.jpg" alt="Male15">
-                <img class="item fascinated math experience english manager" src="./images/finder/Male/Carlos_Moya_0001.jpg" alt="Male16">
-                <img class="item fascinated math experience english manager" src="./images/finder/Male/Chris_Moore_0001.jpg" alt="Male17">
-                <img class="item fascinated math experience english manager" src="./images/finder/Male/Christopher_Matero_0001.jpg" alt="Male18">
-                <img class="item math experience english manager beer" src="./images/finder/Male/Chuanyun_Li_0001.jpg" alt="Male19">
-                <img class="item math experience english manager beer" src="./images/finder/Male/Clay_Aiken_0005.jpg" alt="Male20">
-                <img class="item math experience english manager beer" src="./images/finder/Male/Craig_Morgan_0001.jpg" alt="Male21">
-                <!-- <img class="item" src="./images/finder/Male/.jpg" alt="Male"> -->
-                <!-- 22 Females -->
-                <img class="item fascinated math english manager beer" src="./images/finder/Female/Adriana_Lima_0001.jpg" alt="Female1">
-                <img class="item fascinated math english manager beer" src="./images/finder/Female/Afton_Smith_0001.jpg" alt="Female2">
-                <img class="item fascinated math experience manager beer" src="./images/finder/Female/Agnes_Bruckner_0001.jpg" alt="Female3">
-                <img class="item fascinated math experience manager beer" src="./images/finder/Female/Ai_Sugiyama_0001.jpg" alt="Female4">
-                <img class="item fascinated math experience manager beer" src="./images/finder/Female/Aishwarya_Rai_0001.jpg" alt="Female5">
-                <img class="item fascinated math experience english beer" src="./images/finder/Female/Alexandra_Rozovskaya_0001.jpg" alt="Female6">
-                <img class="item fascinated math experience english manager" src="./images/finder/Female/Alicia_Witt_0001.jpg" alt="Female7">
-                <img class="item fascinated math experience english manager" src="./images/finder/Female/Angela_Bassett_0005.jpg" alt="Female8">
-                <img class="item fascinated math experience english beer" src="./images/finder/Female/Angelina_Jolie_0017.jpg" alt="Female9">
-                <img class="item fascinated math experience english beer" src="./images/finder/Female/Bridget_Fonda_0003.jpg" alt="Female10">
-                <img class="item fascinated math experience english beer" src="./images/finder/Female/Britney_Spears_0004.jpg" alt="Female11">
-                <img class="item fascinated experience english manager beer" src="./images/finder/Female/Brittany_Snow_0001.jpg" alt="Female12">
-                <img class="item fascinated experience english manager beer" src="./images/finder/Female/Carla_Gay_Balingit_0001.jpg" alt="Female13">
-                <img class="item fascinated experience english manager beer" src="./images/finder/Female/Carmen_Electra_0004.jpg" alt="Female14">
-                <img class="item fascinated experience english manager beer" src="./images/finder/Female/Catherine_Zeta-Jones_0003.jpg" alt="Female15">
-                <img class="item fascinated math experience english manager" src="./images/finder/Female/Christine_Baumgartner_0001.jpg" alt="Female16">
-                <img class="item fascinated math experience english manager" src="./images/finder/Female/Christy_Turlington_0001.jpg" alt="Female17">
-                <img class="item fascinated math experience english manager" src="./images/finder/Female/Cindy_Crawford_0002.jpg" alt="Female18">
-                <img class="item math experience english manager beer" src="./images/finder/Female/Claudia_Schiffer_0002.jpg" alt="Female19">
-                <img class="item math experience english manager beer" src="./images/finder/Female/Claudine_Farrell_0001.jpg" alt="Female20">
-                <img class="item math experience english manager beer" src="./images/finder/Female/Courtney_Cox_0001.jpg" alt="Female21">
-                <img class="item math experience english manager beer" src="./images/finder/Female/Cyndi_Thompson_0002.jpg" alt="Female22">
-                <!-- <img class="item" src="./images/finder/Female/.jpg" alt="Female"> -->
+                <!--
+                ==================================================
+                Footer Section Start
+                ================================================== -->
+                <footer id="footer">
+                    <div class="container">
+                        <div class="col-md-8">
+                            <p class="copyright"> &copy; <span>2016</span> Alexandre Cortyl - Powered by Bootstrap</p> 
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Social Media -->
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/alexandrecortyl/en" class="Linkedin" target="_blank">
+                                        <i class="ion-social-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/alexcortyl" class="Twitter" target="_blank">
+                                        <i class="ion-social-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:alexcortyl@gmail.com" class="Email">
+                                        <i class="ion-email"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="skype:alexcortyl?userinfo" class="Skype">
+                                        <i class="ion-social-skype"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/cortylal" class="Github" target="_blank">
+                                        <i class="ion-social-github"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer> <!-- /#footer -->
 
-            </div>
-        </section>
-
-        <section id="About project">
-            <div class="container">
-                <div class="center" style="text-align: center">
-                    <h1 style="border-bottom: #7092c7 6px solid; border-bottom-width: 6px; border-bottom-style: solid; display: inline-block; margin-bottom: 0px; padding-bottom: 10px">About the project</h1>
-                </div>
-                <div>
-                    <h2> Why? </h2>
-                    <h4> 
-                    As I'm currently looking for an end-of-studies internship, my main goal was to produce a fun and interactive way for people to get to know my profile!
-                        <br><br>
-                    I also wanted to give you a chance to feel the satisfaction I get when I'm analyzing data, by vulgarizing and pictorially representing the task of a Data Scientist. 
-                        <br>                    
-                    Nothing is more rewarding than finding what you're looking for among a large amount of diverse, raw and untidy data. 
-                        <br>
-                    By getting to better understand the data you're working on, you are able to draw conclusions and you can help take decisions.
-                    </h4>
-                    <h2 style="padding-top: 30px"> How? </h2>
-                    <h4> I took copyright-free photos of public figures (mainly actors, athletes, models and politics) from an open source database of face photographs: <a href="http://vis-www.cs.umass.edu/lfw/" style="color: #7092c7;" target="_blank"> Labeled Faces in the Wild: A Database for Studying Face Recognition in Unconstrained Environments</a>.
-                        <br>
-                    This database from the University of Massachusetts is usually used to evaluate face recognition algorithms.
-                        
-                        <br><br>
-                    The pictures were chosen randomly, with the only criteria being that the faces were visible.
-                        <br>
-                    The display relies on Javascript, jQuery and the Isotope library in particular.
-                    </h4>
-                </div>
-            </div>
-        </section>
-                    <!--
-        ==================================================
-        Footer Section Start
-        ================================================== -->
-        <footer id="footer">
-            <div class="container">
-                <div class="col-md-8">
-                    <p class="copyright"> &copy; <span>2016</span> Alexandre Cortyl - Powered by Bootstrap</p> 
-                </div>
-                <div class="col-md-4">
-                    <!-- Social Media -->
-                    <ul class="social">
-                        <li>
-                            <a href="https://www.linkedin.com/in/alexandrecortyl/en" class="Linkedin" target="_blank">
-                                <i class="ion-social-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/alexcortyl" class="Twitter" target="_blank">
-                                <i class="ion-social-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:alexcortyl@gmail.com" class="Email">
-                                <i class="ion-email"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="skype:alexcortyl?userinfo" class="Skype">
-                                <i class="ion-social-skype"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/cortylal" class="Github" target="_blank">
-                                <i class="ion-social-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer> <!-- /#footer -->
 
         <div class="popup" style="padding-bottom: 10px; padding-top: 20px;">
             <img src="images/about/close_up.jpg" alt="My Picture" class="img-responsive" style="margin: auto; width: 20%;">

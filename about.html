@@ -33,6 +33,8 @@
         <link rel="stylesheet" href="css/main.css">
         <!-- responsive css -->
         <link rel="stylesheet" href="css/responsive.css">
+        <!-- footer css -->
+        <link rel="stylesheet" href="css/footer.css">
         
         <!-- Template Javascript Files
         ================================================== -->
@@ -53,163 +55,171 @@
         <script src="js/main.js"></script>
     </head>
     <body>
-        <!--
-        ==================================================
-        Header Section Start
-        ================================================== -->
-        <header id="top-bar" class="navbar-fixed-top animated-header">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <!-- /responsive nav button -->
-                    <!-- logo -->
-                    <div class="navbar-brand">
-                        <a href="http://www.alexandrecortyl.com">
-                            Alexandre CORTYL
-                        </a>
-                    </div>
-                    <!-- /logo -->
-                </div>
+        <div id="containter">
+            <div id="header">
+                <!--
+                ==================================================
+                Header Section Start
+                ================================================== -->
+                <header id="top-bar" class="navbar-fixed-top animated-header">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <!-- responsive nav button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <!-- /responsive nav button -->
+                            <!-- logo -->
+                            <div class="navbar-brand">
+                                <a href="http://www.alexandrecortyl.com">
+                                    Alexandre CORTYL
+                                </a>
+                            </div>
+                            <!-- /logo -->
+                        </div>
 
-                <!-- main menu -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <div class="main-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="http://www.alexandrecortyl.com" >Home</a>
-                            </li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="resume.html">Resume</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li><a href="finder.html">Intern Finder</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                        <!-- main menu -->
+                        <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                            <div class="main-menu">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a href="http://www.alexandrecortyl.com" >Home</a>
+                                    </li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="resume.html">Resume</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a href="finder.html">Intern Finder</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- /main nav -->
                     </div>
-                </nav>
-                <!-- /main nav -->
+                </header>
             </div>
-        </header>
 
-        <!-- 
-        ================================================== 
-            Profile Description Section Start
-        ================================================== -->
-        <section class="company-description" style="margin-top: 140px;">
-            <div class="container" style="padding-bottom: 10px;">
-                <div class="row">
-                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s" >
-                        <img src="images/about/close_up.jpg" alt="My Picture" class="img-responsive" style="margin: auto;">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="block wow fadeInUp" data-wow-delay=".3s">
-                            <h3 class="subtitle">Hi, I'm Alex !</h3>
-                            <p>
-                                I'm a Computer Engineer graduating from my Masters (University of Technology of Compiegne, France) in 2016. <br><br>
-                                I'm studying Computer Science with a specialization in Data Science, Machine Learning and Data Mining. <br>
-                                Because yes, I'm a data freak: I just ♥ data, analytics &amp; visualization! <br><br>
-                            </p>
-                            <p>
-                                <b>
-                                I'm currently looking for a 6 month end-of-studies internship (starting in September 2016) in Data analysis / Business Intelligence.
-                                </b>
-                            </p>
+            <div id="body">
+                <!-- 
+                ================================================== 
+                    Profile Description Section Start
+                ================================================== -->
+                <section class="company-description" style="margin-top: 140px;">
+                    <div class="container" style="padding-bottom: 10px;">
+                        <div class="row">
+                            <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s" >
+                                <img src="images/about/close_up.jpg" alt="My Picture" class="img-responsive" style="margin: auto;">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="block wow fadeInUp" data-wow-delay=".3s">
+                                    <h3 class="subtitle">Hi, I'm Alex !</h3>
+                                    <p>
+                                        I'm a Computer Engineer graduating from my Masters (University of Technology of Compiegne, France) in 2016. <br><br>
+                                        I'm studying Computer Science with a specialization in Data Science, Machine Learning and Data Mining. <br>
+                                        Because yes, I'm a data freak: I just ♥ data, analytics &amp; visualization! <br><br>
+                                    </p>
+                                    <p>
+                                        <b>
+                                        I'm currently looking for a 6 month end-of-studies internship (starting in September 2016) in Data analysis / Business Intelligence.
+                                        </b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block wow fadeInUp" data-wow-delay=".7s" data-wow-duration="500ms" style="text-align: center; vertical-align: text-top; padding-top: 20px;">
+                                        <a href="resume.html" class="btn btn-default btn-contact" style="color: #fff; background-color: #333; font-size: 20px;">Browse my background</a>
                         </div>
                     </div>
-                </div>
-                <div class="block wow fadeInUp" data-wow-delay=".7s" data-wow-duration="500ms" style="text-align: center; vertical-align: text-top; padding-top: 20px;">
-                                <a href="resume.html" class="btn btn-default btn-contact" style="color: #fff; background-color: #333; font-size: 20px;">Browse my background</a>
-                </div>
-            </div>
-        </section>
+                </section>
 
 
-        <!-- 
-        ================================================== 
-            Profile Feature Section Start
-        ================================================== -->
-        <section style="margin-top: 0px;" class="about-feature clearfix">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="block about-feature-1 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1.1s">
-                        <h2 class="item_title">
-                        Autonomous
-                        </h2>
-                        <p>
-                            I quickly adapt to new working environments, and will learn what's needed to successfully conduct a mission.
-                        </p>
+                <!-- 
+                ================================================== 
+                    Profile Feature Section Start
+                ================================================== -->
+                <section style="margin-top: 0px;" class="about-feature clearfix">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="block about-feature-1 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1.1s">
+                                <h2 class="item_title">
+                                Autonomous
+                                </h2>
+                                <p>
+                                    I quickly adapt to new working environments, and will learn what's needed to successfully conduct a mission.
+                                </p>
+                            </div>
+                            <div class="block about-feature-2 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1.1s">
+                                <h2 class="item_title">
+                                Dynamic
+                                </h2>
+                                <p>
+                                    Invested in each task, I am curious and I like to understand a project in its entirety.
+                                </p>
+                            </div>
+                            <div class="block about-feature-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1.1s">
+                                <h2 class="item_title">
+                                Efficient
+                                </h2>
+                                <p>
+                                    Motivated, I am passionate about new technologies and I believe my skills will be useful to your company.                             
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="block about-feature-2 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1.1s">
-                        <h2 class="item_title">
-                        Dynamic
-                        </h2>
-                        <p>
-                            Invested in each task, I am curious and I like to understand a project in its entirety.
-                        </p>
-                    </div>
-                    <div class="block about-feature-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1.1s">
-                        <h2 class="item_title">
-                        Efficient
-                        </h2>
-                        <p>
-                            Motivated, I am passionate about new technologies and I believe my skills will be useful to your company.                             
-                        </p>
-                    </div>
-                </div>
+                </section>
             </div>
-        </section>
-        <!--
-        ==================================================
-        Footer Section Start
-        ================================================== -->
-        <footer id="footer">
-            <div class="container">
-                <div class="col-md-8">
-                    <p class="copyright"> &copy; <span>2016</span> Alexandre Cortyl - Powered by Bootstrap</p> 
-                </div>
-                <div class="col-md-4">
-                    <!-- Social Media -->
-                    <ul class="social">
-                        <li>
-                            <a href="https://www.linkedin.com/in/alexandrecortyl/en" class="Linkedin" target="_blank">
-                                <i class="ion-social-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/alexcortyl" class="Twitter" target="_blank">
-                                <i class="ion-social-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:alexcortyl@gmail.com" class="Email">
-                                <i class="ion-email"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="skype:alexcortyl?userinfo" class="Skype">
-                                <i class="ion-social-skype"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/cortylal" class="Github" target="_blank">
-                                <i class="ion-social-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
+            <div id="footer">
+                <!--
+                ==================================================
+                Footer Section Start
+                ================================================== -->
+                <footer id="footer">
+                    <div class="container">
+                        <div class="col-md-8">
+                            <p class="copyright"> &copy; <span>2016</span> Alexandre Cortyl - Powered by Bootstrap</p> 
+                        </div>
+                        <div class="col-md-4">
+                            <!-- Social Media -->
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/alexandrecortyl/en" class="Linkedin" target="_blank">
+                                        <i class="ion-social-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/alexcortyl" class="Twitter" target="_blank">
+                                        <i class="ion-social-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:alexcortyl@gmail.com" class="Email">
+                                        <i class="ion-email"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="skype:alexcortyl?userinfo" class="Skype">
+                                        <i class="ion-social-skype"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/cortylal" class="Github" target="_blank">
+                                        <i class="ion-social-github"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer> <!-- /#footer -->
             </div>
-        </footer> <!-- /#footer -->
-            
+        </div>
     </body>
 </html>
