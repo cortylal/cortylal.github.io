@@ -190,7 +190,7 @@
                                 <br>
                                 <br>
                             <ol>
-                                <li><u>Collecting my location data: <br> <br></u></li>
+                                <li><u>Collecting my location data:<br> <br></u></li>
                             My location data comes from <a href="https://openpaths.cc/" style="color: #7092c7;" target="_blank">OpenPaths</a>.
                                 <br>
                             This app uploads location data from your mobile device to their website. You can then access it at will, through a dedicated API or simply by exporting it as a CSV or JSON file.
@@ -199,14 +199,17 @@
                                 <br>
                                 <br>
                                 <br>
-                                <li><u>Preparing and cleaning the data</u></li>
+                                <li><u>Preparing and cleaning the data:<br> <br></u></li>
                             The raw data previously collected would be uninterpretable if presented "as is". So I had to do some simple data cleaning and preparation for it to be more valuable.
                                 <br>
                             To begin with, I enriched my dataset with city and country information for each stored location. Indeed, it initially only contained timestamps, latitude and longitude coordinates.I did this using the Google Maps API that allows you to request address data from a coordinate pair. I wrote a Python script to automate the process.
                                 <br>
                             Next, I chose to simplify my dataset by reducing the number of location data points as too many points would affect readability. Too many points to display would also trouble the map rendering, which is done on-the-fly and client-side in JavaScript.
                             I applied the <a href="https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm" style="color: #7092c7;" target="_blank">Ramer–Douglas–Peucker (RDP)</a> algorithm, which allows keeping only spatially-representative points. The results were highly satisfying as I was able to reduce the size of my data set by about 90%! Again, this was done using a Python script.
-                                <li><u>Displaying the data</u></li>
+                                <br>
+                                <br>
+                                <br>
+                                <li><u>Displaying the data:<br> <br></u></li>
                             For the map visualization of my location data, I chose to use <a href="http://leafletjs.com/" style="color: #7092c7;" target="_blank">Leaflet</a>, a powerful open-source JavaScript library for interactive maps.
                             </ol>
                             I must conclude with a big THANK YOU to <a href="https://twitter.com/gboeing" style="color: #7092c7;" target="_blank">Geoff Boeing</a>, a PhD candidate in urban planning at UC Berkeley, whose tutorials were very helpful and from which my project is largely inspired.
