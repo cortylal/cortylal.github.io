@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Leaflet Map</title>
+<meta charset='utf-8' />
+<link rel='stylesheet' href='leaflet.css' />
+<script src='leaflet.js'></script>
+<script src='leaflet-omnivore.min.js'></script>
+</head>
+<body>
+<div id='my-location-leaflet-map' style='width: 600px; height: 400px'></div>
+<script>
+//create a map centered on europe with zoom level 4
+var map = L.map('my-location-leaflet-map');
+var centerCoordinates = new L.LatLng(46.333, 12.011);
+var initialZoom = 4;
+map.setView(centerCoordinates, initialZoom);
+ 
+//add a basemap tile layer to the map and set maxZoom to how far you can zoom this tileset in
+var basemapURL = 'https://a.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png'
+map.addLayer(new L.TileLayer(basemapURL, {maxZoom: 11, attribution: ''}));
+
+//set up a customized icon to use for the point data
+var customIcon = L.icon({
+    iconUrl: 'circle-18.png',
+    iconSize: [18, 18], //size of the icon in pixels
+    iconAnchor: [9, 9], //point of the icon which will correspond to marker's location (the center)
+    popupAnchor: [0, 0] //point from which the popup should open relative to the iconAnchor
+});
+
+//load the CSV of point data to add to the map
+omnivore.csv('http://localhost/Users/Alexandre/Downloads/geocoded.csv')
+    .on('ready', function(layer) {
+        this.eachLayer(function(marker) {
+ 
+            //change the icons for each point on the map
+            marker.setIcon(customIcon);
+ 
+            //create popup text to display the date, city, and country of the GPS data point
+            var popupText =
+                marker.toGeoJSON().properties.date +
+                '<br />I was in ' +
+                marker.toGeoJSON().properties.city + ', ' +
+                marker.toGeoJSON().properties.country;
+ 
+            //bind the popup to each icon
+            marker.bindPopup(popupText);
+        });
+    })
+    .addTo(map);
+</script>
+</body>
+</html>
