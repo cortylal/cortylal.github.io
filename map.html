@@ -3,9 +3,9 @@
 <head>
 <title>My locations</title>
 <meta charset='utf-8' />
-<link rel='stylesheet' href='leaflet.css' />
-<script src='leaflet.js'></script>
-<script src='leaflet-omnivore.min.js'></script>
+<link rel='stylesheet' href='css/leaflet.css' />
+<script src='js/leaflet.js'></script>
+<script src='js/leaflet-omnivore.min.js'></script>
 </head>
 <body>
 <div id='my-location-leaflet-map' style='width: 600px; height: 400px'></div>
@@ -22,14 +22,14 @@ map.addLayer(new L.TileLayer(basemapURL, {maxZoom: 11, attribution: ''}));
 
 //set up a customized icon to use for the point data
 var customIcon = L.icon({
-    iconUrl: 'marker-18@2x.png',
+    iconUrl: 'images/icons/marker-18@2x.png',
     iconSize: [18, 18], //size of the icon in pixels
     iconAnchor: [9, 9], //point of the icon which will correspond to marker's location (the center)
     popupAnchor: [0, 0] //point from which the popup should open relative to the iconAnchor
 });
 
 //load the CSV of point data to add to the map
-omnivore.csv('geocoded.csv')
+omnivore.csv('data/geocoded.csv')
     .on('ready', function(layer) {
         this.eachLayer(function(marker) {
  
