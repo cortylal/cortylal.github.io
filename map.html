@@ -200,20 +200,18 @@
                             As they rightfully put it: "The data you store with OpenPaths is your data. Thousands of commercial services and platforms make use of your location, but some also mine or sell that data for other purposes. Additionally, they typically do not share the raw data with a very important individual — you. With OpenPaths, your data are encrypted, so no one can access it."
                                 <br>
                                 <br>
-                                <br>
                                 <li><u>Preparing and cleaning the data:</u></li>
                             The raw data previously collected would be uninterpretable if presented "as is". So I had to do some simple data cleaning and preparation for it to be more valuable.
                                 <br>
                                 <br>
                             To begin with, I enriched my dataset with 'city' and 'country' information for each stored location. Indeed, it initially only contained timestamps, latitude and longitude coordinates.
                                 <br>
-                            I did this using the Google Maps API that allows you to request address data from a coordinate pair. I wrote a Python script to automate the process.
+                            I did this using the <a href="https://developers.google.com/maps/" style="color: #7092c7;" target="_blank">Google Maps API</a> that allows you to request address data from a coordinate pair. I wrote a Python script to automate the process.
                                 <br>
                                 <br>
                             Next, I chose to simplify my dataset by reducing the number of location data points, concerned that too many points would affect readability. Displaying a large number of points would also trouble the map rendering, which is done on-the-fly and client-side in JavaScript.
                                 <br>
                             I applied the <a href="https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm" style="color: #7092c7;" target="_blank">Ramer–Douglas–Peucker (RDP)</a> algorithm, which allows keeping only spatially-representative points. The results were highly satisfying as I was able to reduce the size of my data set by about 90%! Again, this was done using a Python script.
-                                <br>
                                 <br>
                                 <br>
                                 <li><u>Displaying the data:</u></li>
