@@ -39,4 +39,4 @@ for si_i, si_row in si.iterrows():
 # column of the simplified data set
 rs = df.ix[si['df_index'].dropna()]
 
-rs.to_csv('reduced_openpaths_data.csv', index=False)
+rs.to_csv('reduced_geocoded_openpaths_data.csv', index=False)
