@@ -57,16 +57,14 @@
     <div id="demo"></div>
     <div id="map"></div>
     <script type="text/javascript">
-    var mapboxTiles = L.tileLayer('https://a.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png', {
-        attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>'
-    });
-
 
     var map = L.map('map')
-        .addLayer(mapboxTiles);
     var centerCoordinates = new L.LatLng(40.72332345541449, -73.99);
     var initialZoom = 14;
     map.setView(centerCoordinates, initialZoom);
+
+    var basemapURL = 'https://a.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png'
+    map.addLayer(new L.TileLayer(basemapURL));
 
 
     // we will be appending the SVG to the Leaflet map pane
