@@ -146,18 +146,6 @@
             .attr("r", 5)
             .style("fill", "red")
             .style("opacity", "1");
-        // I want names for my coffee and beer
-        var text = g.selectAll("text")
-            .data(originANDdestination)
-            .enter()
-            .append("text")
-            .text(function(d) {
-                return d.properties.name
-            })
-            .attr("class", "locnames")
-            .attr("y", function(d) {
-                return -10
-            })
         // when the user zooms in or out you need to reset
         // the view
         map.on("viewreset", reset);
