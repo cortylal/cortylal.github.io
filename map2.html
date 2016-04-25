@@ -316,13 +316,13 @@
                                 this.stream.point(point.x, point.y);
                             }
                          });
+                        function applyLatLngToLayer(d) {
+                            var y = d.geometry.coordinates[1]
+                            var x = d.geometry.coordinates[0]
+                            return map.latLngToLayerPoint(new L.LatLng(y, x))
+                        }
                     })
                     .addTo(map);
-                    function applyLatLngToLayer(d) {
-                        var y = d.geometry.coordinates[1]
-                        var x = d.geometry.coordinates[0]
-                        return map.latLngToLayerPoint(new L.LatLng(y, x))
-                    }
                 </script>
 
                 <section id="About project">
