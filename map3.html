@@ -63,7 +63,7 @@
     <div id="demo"></div>
     <div id="map"></div>
     <script type="text/javascript">
-    var mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v3/examples.map-zr0njcqy/{z}/{x}/{y}.png', {
+    var mapboxTiles = L.tileLayer('https://a.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png', {
         attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>'
     });
     var map = L.map('map')
@@ -78,7 +78,7 @@
     var g = svg.append("g").attr("class", "leaflet-zoom-hide");
     //read in the GeoJSON. This function is asynchronous so
     // anything that needs the json file should be within
-    d3.json("points.geojson", function(collection) {
+    d3.json("data/points.geojson", function(collection) {
         // this is not needed right now, but for future we may need
         // to implement some filtering. This uses the d3 filter function
         // featuresdata is an array of point objects
