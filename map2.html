@@ -160,8 +160,7 @@
                 d3.csv("data/reduced_geocoded_openpaths_data.csv", function(collection) {
                     dataset = collection.map(function(d) { return [ +d["lat"], +d["lon"] ]; });
                     dataset.forEach(function(d) {
-                        d.LatLng = new L.LatLng(d[0],
-                                                d[1])
+                        d.LatLng = new L.LatLng(d[0],d[1])
                     })
 
                     var feature = g.selectAll("circle")
