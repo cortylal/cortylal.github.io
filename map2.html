@@ -159,8 +159,8 @@
 
                 d3.csv("data/reduced_geocoded_openpaths_data.csv", function(collection) {
                     collection.forEach(function(d) {
-                        d.LatLng = new L.LatLng(d.lat,
-                                                d.lon)
+                        d.LatLng = new L.LatLng(+d.lat,
+                                                +d.lon)
                     })
 
                     var feature = g.selectAll("circle")
