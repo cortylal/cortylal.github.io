@@ -48,12 +48,6 @@
     stroke: black;
     opacity: 1;
 }
-.locnames {
-    fill: black;
-    text-shadow: 1px 1px 1px #FFF, 3px 3px 5px #000;
-    font-weight: bold;
-    font-size: 13px;
-}
     </style>
 
 </head>
@@ -174,19 +168,6 @@
             .style("fill", "red")
             .style("opacity", "1");
 
-        // I want names for my coffee and beer
-        var text = g.selectAll("text")
-            .data(originANDdestination)
-            .enter()
-            .append("text")
-            .text(function(d) {
-                return d.properties.name
-            })
-            .attr("class", "locnames")
-            .attr("y", function(d) {
-                return -10
-            })
-
 
         // when the user zooms in or out you need to reset
         // the view
@@ -209,13 +190,6 @@
             // cover our features BUT... since you might be using a big
             // circle to represent a 1 dimensional point, the circle
             // might get cut off.
-
-            text.attr("transform",
-                function(d) {
-                    return "translate(" +
-                        applyLatLngToLayer(d).x + "," +
-                        applyLatLngToLayer(d).y + ")";
-                });
 
 
             // for the points we need to convert from latlong
