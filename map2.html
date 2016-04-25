@@ -269,7 +269,7 @@
                                     .style("left", topLeft[0] - 50 + "px")
                                     .style("top", topLeft[1] - 50 + "px");
                                 linePath.attr("d", toLine)
-                                g.attr("transform", "translate(" + (-topLeft[0] + 50) + "," + (-topLeft[1] + 50) + ")"
+                                g.attr("transform", "translate(" + (-topLeft[0] + 50) + "," + (-topLeft[1] + 50) + ")");
                             }
                             function transition() {
                                 linePath.transition()
