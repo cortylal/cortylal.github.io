@@ -163,12 +163,7 @@
             // cover our features BUT... since you might be using a big
             // circle to represent a 1 dimensional point, the circle
             // might get cut off.
-            text.attr("transform",
-                function(d) {
-                    return "translate(" +
-                        applyLatLngToLayer(d).x + "," +
-                        applyLatLngToLayer(d).y + ")";
-                });
+
             // for the points we need to convert from latlong
             // to map units
             begend.attr("transform",
