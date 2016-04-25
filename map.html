@@ -57,6 +57,8 @@
         <!-- leaflet js -->
         <script src='js/leaflet.js'></script>
         <script src='js/leaflet-omnivore.min.js'></script>
+        <!-- D3 js -->
+        <script src='js/d3.min.js'></script>
     </head>
     <body>
                 <!--
@@ -125,6 +127,14 @@
                             <h1 style="border-bottom: #7092c7 6px solid; border-bottom-width: 6px; border-bottom-style: solid; display: inline-block; margin-bottom: 20px; padding-bottom: 10px">My locations</h1>
                         </div>
                     </div>
+                    <div>
+                            <h3 style="text-align: center; padding-top: 20px;">
+                                I love travelling, follow my trail!
+                            </h3>
+                            <h4 style="text-align: center;"> 
+                            Zoom in the map to see the data points in more detail, and click each location to display relevant information. 
+                            </h4>
+                        </div>
                 </section>
 
                 <div id='my-location-leaflet-map' style='width: 600px; height: 400px; margin: auto'></div>
@@ -147,6 +157,9 @@
                     iconAnchor: [9, 9], //point of the icon which will correspond to marker's location (the center)
                     popupAnchor: [0, 0] //point from which the popup should open relative to the iconAnchor
                 });
+
+                // var svg = d3.select(map.getPanes().overlayPane).append("svg");
+                // var g = svg.append("g").attr("class", "leaflet-zoom-hide");
 
                 //load the CSV of point data to add to the map
                 omnivore.csv('data/reduced_geocoded_openpaths_data.csv')
@@ -181,6 +194,9 @@
                             Because I like to travel, I wanted to be able to keep track of my whereabouts.
                                 <br>
                             This was also an additional opportunity for me to practice JavaScript and map visualization in general.
+                                <br>
+                                <br>
+                            I started collecting my location data in April 2016 while in Istanbul, during my Erasmus Exchange Program. With time, you'll be able to follow my travels around the world :)
                             </h4>
                             <h2 style="padding-top: 30px"> How? </h2>
                             <h4>
