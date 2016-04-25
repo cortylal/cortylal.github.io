@@ -178,8 +178,8 @@
                         feature.attr("transform", 
                         function(d) { 
                             return "translate("+ 
-                                map.latLngToLayerPoint(d.LatLng.lat).x +","+ 
-                                map.latLngToLayerPoint(d.LatLng.lng).y +")";
+                                map.latLngToLayerPoint(d.LatLng).x +","+ 
+                                map.latLngToLayerPoint(d.LatLng).y +")";
                             }
                         )
                     }
