@@ -157,7 +157,7 @@
                 var svg = d3.select("my-location-leaflet-map").select("svg");
                 var g = svg.append("g");
 
-                d3.json("data/convertedcsv.json", function(collection) {
+                d3.json("data/convertcsv.json", function(collection) {
                     collection.objects.forEach(function(d) {
                         d.LatLng = new L.LatLng(d.circle.coordinates[0],
                                                 d.circle.coordinates[1])
