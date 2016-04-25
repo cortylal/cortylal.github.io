@@ -157,10 +157,10 @@
                 var svg = d3.select("my-location-leaflet-map").select("svg");
                 var g = svg.append("g");
 
-                d3.csv("data/reduced_geocoded_openpaths_data.csv", function(collection) {
-                    dataset = collection.map(function(d) { return [ +d["lat"], +d["lon"] ]; });
-                    dataset.forEach(function(d) {
-                        d.LatLng = new L.LatLng(d[0],d[1])
+                d3.json("data/convertedcsv.json", function(collection) {
+                    collection.objects.forEach(function(d) {
+                        d.LatLng = new L.LatLng(d.circle.coordinates[0],
+                                                d.circle.coordinates[1])
                     })
 
                     var feature = g.selectAll("circle")
