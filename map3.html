@@ -79,6 +79,7 @@
     //read in the GeoJSON. This function is asynchronous so
     // anything that needs the json file should be within
     d3.json("points.geojson", function(collection) {
+        var featuresdata = collection
         //stream transform. transforms geometry before passing it to
         // listener. Can be used in conjunction with d3.geo.path
         // to implement the transform. 
