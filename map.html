@@ -147,8 +147,8 @@
                 <script>
                 //create a map centered on Istanbul with zoom level 10
                 var map = L.map('my-location-leaflet-map');
-                var centerCoordinates = new L.LatLng(41.015137, 28.979530);
-                var initialZoom = 10;
+                var centerCoordinates = new L.LatLng(45.132578, 15.298463);
+                var initialZoom = 3;
                 map.setView(centerCoordinates, initialZoom);
                  
                 //add a basemap tile layer to the map and set maxZoom to how far you can zoom this tileset in
@@ -167,7 +167,7 @@
                 // var g = svg.append("g").attr("class", "leaflet-zoom-hide");
 
                 //load the CSV of point data to add to the map
-                omnivore.csv('data/reduced_geocoded_openpaths_data_13_02_2016.csv')
+                omnivore.csv('data/reduced_geocoded_openpaths_data_08_06_2016.csv')
                     .on('ready', function(layer) {
                         this.eachLayer(function(marker) {
                  
