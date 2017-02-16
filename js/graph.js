@@ -144,7 +144,7 @@
 						if (!nearest.node) return false
 
 							if (nearest.node.data.shape!='dot'){
-							}else if ($.inArray(nearest.node.name, ['Skills','Web','Software','System','Data Analysis','Machine Learning','Data Storage','Language','Personal']) >=0 ){
+							}else if ($.inArray(nearest.node.name, ['Skills','Web','Software','System','Data Analysis','Machine Learning','Data Storage','Language','Personal', 'Data Science Tools']) >=0 ){
 								if (nearest.node.name!=_section){
 									_section = nearest.node.name
 									that.switchSection(_section)
@@ -347,6 +347,7 @@
 			Software:{color:CLR.black, shape:"dot", alpha:1}, 
 			C:{color:CLR.chocolate, alpha:0},
 			"C++":{color:CLR.chocolate, alpha:0},
+			Java:{color:CLR.chocolate, alpha:0},
 
 			System:{color:CLR.black, shape:"dot", alpha:1}, 
 			Linux:{color:CLR.pink, alpha:0},
@@ -356,15 +357,23 @@
 			R:{color:CLR.red, alpha:0},
 			Python:{color:CLR.red, alpha:0},
 			SQL:{color:CLR.red, alpha:0},
-			Weka:{color:CLR.red, alpha:0},
-			"Teradata Studio":{color:CLR.red, alpha:0},
-			Gephi:{color:CLR.red, alpha:0},
+			MapReduce:{color:CLR.red, alpha:0},
+			Statistics:{color:CLR.red, alpha:0},
+
+			"Data Science Tools":{color:CLR.black, shape:"dot", alpha:1}, 
+			Weka:{color:CLR.black, alpha:0},
+			"Teradata Studio":{color:CLR.black, alpha:0},
+			Gephi:{color:CLR.black, alpha:0},
+			"Tableau Software":{color:CLR.black, alpha:0},
+			Grafana:{color:CLR.black, alpha:0},
 
 			"Data Storage":{color:CLR.black, shape:"dot", alpha:1},
 			Oracle:{color:CLR.orange, alpha:0},
 			Hadoop:{color:CLR.orange, alpha:0},
 			Hive:{color:CLR.orange, alpha:0},
 			MySQL:{color:CLR.orange, alpha:0},
+			Vertica:{color:CLR.orange, alpha:0},
+			DBeaver:{color:CLR.orange, alpha:0},
 
 			"Machine Learning":{color:CLR.black, shape:"dot", alpha:1},
 			SVM:{color:CLR.green, alpha:0},
@@ -385,7 +394,8 @@
 			Dynamic:{color:CLR.purple, alpha:0},
 			Rigorous:{color:CLR.purple, alpha:0},
 			Organized:{color:CLR.purple, alpha:0},
-			Manager:{color:CLR.purple, alpha:0}
+			Manager:{color:CLR.purple, alpha:0},
+			"Team Player":{color:CLR.purple, alpha:0}
 			},
 		edges:{
 			"Skills":{
@@ -393,6 +403,7 @@
 				Software:{length:.8},
 				System:{length:.8},
 				"Data Analysis":{length:.8},
+				"Data Science Tools":{length:.8},
 				"Data Storage":{length:.8},
 				"Machine Learning":{length:.8},
 				Language:{length:.8},
@@ -409,7 +420,8 @@
 			},
 			Software:{
 				C:{},
-				"C++":{}
+				"C++":{},
+				Java:{}
 			},
 			System:{ 
 				Linux:{},
@@ -419,15 +431,23 @@
 				R:{},
 				Python:{},
 				SQL:{},
+				MapReduce:{},
+				Statistics:{}
+			},
+			"Data Science Tools":{
 				Weka:{},
 				"Teradata Studio":{},
-				Gephi:{}
+				Gephi:{},
+				"Tableau Software":{},
+				Grafana:{}
 			},
 			"Data Storage":{
 				Oracle:{},
 				Hadoop:{},
 				Hive:{},
-				MySQL:{}
+				MySQL:{},
+				Vertica:{},
+				DBeaver:{}
 			},
 			"Machine Learning":{
 				SVM:{},
@@ -448,7 +468,8 @@
 				Dynamic:{},
 				Rigorous:{},
 				Organized:{},
-				Manager:{}
+				Manager:{},
+				"Team Player":{}
 			}
 		}
 	}
