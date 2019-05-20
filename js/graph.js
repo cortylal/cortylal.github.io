@@ -366,6 +366,7 @@
 			Gephi:{color:CLR.black, alpha:0},
 			"Tableau Software":{color:CLR.black, alpha:0},
 			Grafana:{color:CLR.black, alpha:0},
+			Looker:{color:CLR.black, alpha:0},
 
 			"Data Storage":{color:CLR.black, shape:"dot", alpha:1},
 			Oracle:{color:CLR.orange, alpha:0},
@@ -374,6 +375,8 @@
 			MySQL:{color:CLR.orange, alpha:0},
 			Vertica:{color:CLR.orange, alpha:0},
 			DBeaver:{color:CLR.orange, alpha:0},
+			Redshift:{color:CLR.orange, alpha:0},
+			BigQuery:{color:CLR.orange, alpha:0},
 
 			"Machine Learning":{color:CLR.black, shape:"dot", alpha:1},
 			SVM:{color:CLR.green, alpha:0},
@@ -439,7 +442,8 @@
 				"Teradata Studio":{},
 				Gephi:{},
 				"Tableau Software":{},
-				Grafana:{}
+				Grafana:{},
+				Looker:{}
 			},
 			"Data Storage":{
 				Oracle:{},
@@ -447,7 +451,9 @@
 				Hive:{},
 				MySQL:{},
 				Vertica:{},
-				DBeaver:{}
+				DBeaver:{},
+				Redshift:{},
+				BigQuery:{}
 			},
 			"Machine Learning":{
 				SVM:{},
